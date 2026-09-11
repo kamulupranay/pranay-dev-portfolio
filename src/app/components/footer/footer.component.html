@@ -1,0 +1,16 @@
+<footer>
+    <div class="footer-main">
+        <div>
+            <div class="brand"><span class="brand-mark">&lt;/&gt;</span><span>{{config.name}}</span></div>
+            <p>Senior Frontend Developer | Angular Specialist</p>
+        </div>
+        <div class="footer-links">
+            @if(config.social.github || config.social.linkedin){
+            <a [href]="config.social.github" target="_blank" rel="noopener">GitHub</a>
+            <a [href]="config.social.linkedin" target="_blank" rel="noopener">LinkedIn</a>
+            }
+            <a [href]="'mailto:'+config.email">Email</a>
+        </div>
+    </div>
+    <div class="copyright">© {{year}} Kamulu Pranay. All Rights Reserved.</div>
+</footer>

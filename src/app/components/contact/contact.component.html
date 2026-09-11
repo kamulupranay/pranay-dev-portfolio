@@ -1,0 +1,35 @@
+<section id="contact" class="section contact">
+    <div class="contact-grid">
+        <div>
+            <p class="eyebrow">08 · CONTACT</p>
+            <h2>Let's build something <span>great.</span></h2>
+            <p class="contact-copy">I'm currently available for frontend development opportunities and can join
+                immediately.</p>
+            <div class="contact-list"><a [href]="'mailto:'+config.email"><span>Email</span>{{config.email}}</a><a
+                    [href]="'tel:'+config.phone"><span>Phone</span>+91 97009 81212</a>
+                <div><span>Location</span>Pan India | Open to Relocate</div>
+            </div>
+            <div class="contact-actions"><a class="btn primary" [href]="'mailto:'+config.email">Send Email ↗</a><a
+                    class="btn secondary" [href]="'tel:'+config.phone">Call Me ☎</a></div>
+        </div>
+        <form [formGroup]="form" (ngSubmit)="submit()">
+            <label>Name<input type="text" formControlName="name" autocomplete="name">
+                @if(form.controls.name.touched && form.controls.name.invalid){
+                <small>Name is required.</small>
+                }
+            </label>
+            <label>Subject<input type="text" formControlName="subject"></label>
+            <label>Message<textarea rows="5" formControlName="message"></textarea>
+                @if(form.controls.message.touched && form.controls.message.invalid){
+                <small>Message must be at least 20 characters.</small>
+            }
+            </label>
+            <button class="btn primary submit" type="submit">Send Message ↗</button>
+            @if(submitted){
+                <p class="form-note">Your email client should open with the message prepared. No data is
+                stored by this portfolio.</p>
+            }
+            
+        </form>
+    </div>
+</section>

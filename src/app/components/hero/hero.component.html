@@ -1,0 +1,45 @@
+<section id="home" class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">AVAILABLE FOR FRONTEND OPPORTUNITIES · IMMEDIATE JOINER</p>
+    <h1>Hi, I'm <span>Pranay Kamulu</span></h1>
+    <h2>Senior Frontend Developer</h2>
+    <p class="lead"> Angular <b>|</b> TypeScript <b>|</b> JavaScript <b>|</b> RxJS <b>|</b> NgRx</p>
+    <p class="summary">
+      Senior Frontend Developer with 5.3 years of experience designing and building scalable,
+      high-performance web applications using Angular, TypeScript, JavaScript, RxJS, NgRx and modern UI technologies.
+    </p>
+    <div class="actions">
+      <a class="btn primary" [routerLink]="['/']" fragment="projects">View My Work
+        <span>↗</span>
+      </a>
+      <a class="btn secondary" [href]="config.resumePath" download>Download Resume
+        <span>↓</span>
+      </a>
+      <a class="btn ghost" [routerLink]="['/']" fragment="contact">Contact Me</a>
+    </div>
+    <div class="socials">
+      @if(config.social.github || config.social.linkedin){
+      <a [href]="config.social.github" target="_blank"
+        rel="noopener">GitHub ↗</a>
+        <a [href]="config.social.linkedin" target="_blank"
+        rel="noopener">LinkedIn ↗</a>
+        <a [href]="'mailto:'+config.email">Email ↗</a>
+      }
+      </div>
+  </div>
+  <div class="visual" aria-label="Frontend architecture illustration">
+    <div class="code-window">
+      <div class="dots"><i></i><i></i><i></i><span>angular-portfolio.ts</span></div>
+      <pre><code><span class="kw">const</span> developer = {{'{'}}
+  <span class="key">name</span>: <span class="str">'Pranay'</span>,
+  <span class="key">focus</span>: <span class="str">'Angular'</span>,
+  <span class="key">state</span>: [<span class="str">'RxJS'</span>, <span class="str">'NgRx'</span>],
+  <span class="key">ui</span>: <span class="str">'Accessible'</span>,
+  <span class="key">scale</span>: <span class="str">'Enterprise'</span>
+{{'}'}};</code></pre>
+      <div class="terminal"><span>➜</span> build --production <b>✓ ready</b></div>
+    </div>
+    <div class="orb orb-a"></div>
+    <div class="orb orb-b"></div>
+  </div>
+</section>

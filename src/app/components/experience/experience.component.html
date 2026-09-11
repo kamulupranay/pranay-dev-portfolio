@@ -1,0 +1,35 @@
+<section id="experience" class="section">
+    <div class="section-head">
+        <p class="eyebrow">03 · EXPERIENCE</p>
+        <h2>A track record of <span>shipping.</span></h2>
+    </div>
+    <div class="timeline">
+        @for(exp of experiences; track $index) {
+        <article class="timeline-item">
+            <div class="dot"></div>
+            <div class="time">{{exp.period}}</div>
+            <div class="role">
+                <h3>{{exp.role}}</h3>
+                <p class="company">{{exp.company}} <span>· India</span></p>
+                @if(exp.project){
+                <p class="project">Project: {{exp.project}}</p>
+                }
+                <ul>
+                    @for(h of exp.highlights; track $index){
+                    <li>{{h}}</li>
+                    }
+                </ul>
+            </div>
+        </article>
+    }
+        <article class="timeline-item break">
+            <div class="dot"></div>
+            <div class="time">Dec 2025 – Apr 2026</div>
+            <div class="role">
+                <h3>Planned Career Break</h3>
+                <p class="company">Career transition</p>
+                <p>Planned career break before returning to full-time frontend development.</p>
+            </div>
+        </article>
+    </div>
+</section>

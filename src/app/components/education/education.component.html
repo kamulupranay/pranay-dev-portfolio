@@ -1,0 +1,16 @@
+<section id="education" class="section">
+    <div class="section-head">
+        <p class="eyebrow">07 · EDUCATION</p>
+        <h2>Academic <span>foundation.</span></h2>
+    </div>
+    <div class="education-grid">
+        @for(item of education; track $index){
+        <article>
+            <div><span class="degree">{{item[0]}}</span>
+                <h3>{{item[1]}}</h3>
+            </div>
+            <div class="score"><strong>{{item[3]}}</strong><span>{{item[2]}}</span></div>
+        </article>
+        }
+    </div>
+</section>

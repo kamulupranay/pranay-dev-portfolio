@@ -1,0 +1,26 @@
+<section id="about" class="section">
+    <div class="section-head">
+        <p class="eyebrow">01 · ABOUT</p>
+        <h2>Engineering interfaces that <span>scale.</span></h2>
+    </div>
+    <div class="about-grid">
+        <div>
+            <p class="large">Senior Frontend Developer with 5.3 years of experience designing and building scalable,
+                high-performance web applications using Angular, TypeScript, JavaScript, Angular Material, RxJS and
+                NgRx.</p>
+            <p>Experienced in enterprise Angular applications, scalable SPAs, responsive UI, REST API integration, state
+                management, reusable components, performance optimization, WCAG 2.1 accessibility and cross-browser
+                compatibility.</p>
+            <p class="highlight">Worked on India's national <strong>e-Filing Income Tax Portal</strong>, delivering
+                responsive ITR modules and enterprise workflows for millions of concurrent taxpayer sessions.</p>
+        </div>
+        <div class="stats">
+            @for(s of stats; track $index) {
+            <div class="stat">
+                <strong>{{s[0]}}</strong>
+                <span>{{s[1]}}</span>
+            </div>
+            }
+        </div>
+    </div>
+</section>

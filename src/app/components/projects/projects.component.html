@@ -1,0 +1,31 @@
+<section id="projects" class="section">
+    <div class="section-head">
+        <p class="eyebrow">05 · PROJECTS</p>
+        <h2>Selected <span>work.</span></h2>
+        <p>Enterprise and production-focused work drawn directly from my professional experience.</p>
+    </div>
+    <div class="project-grid">
+        @for(project of projects; track $index) {
+        <article class="project-card">
+            <div class="project-top"><span>{{project.category}}</span><span
+                    class="project-num">{{(projects.indexOf(project)+1).toString().padStart(2,'0')}}</span></div>
+            <h3>{{project.name}}</h3>
+            <p>{{project.description}}</p>
+            <div class="badges">
+                @for(tech of project.technologies; track $index){
+                <span>{{tech}}</span>
+                }
+            </div>
+
+            @if(project.url){
+            <a class="details" [href]="project.url" target="_blank" rel="noopener">View Details</a>
+            }@else{
+            <span class="details disabled" title="Add a URL in portfolio.data.ts">View
+                Details · URL to be added
+            </span>
+            }
+
+        </article>
+        }
+    </div>
+</section>

@@ -1,0 +1,14 @@
+<section id="achievements" class="section alt">
+    <div class="section-head">
+        <p class="eyebrow">04 · IMPACT</p>
+        <h2>Measured by <span>outcomes.</span></h2>
+    </div>
+    <div class="achievement-grid">
+        @for(item of items; track $index) {
+        <article class="achievement"><span class="line"></span>
+            <h3>{{item[0]}}</h3>
+            <p>{{item[1]}}</p>
+        </article>
+        }
+    </div>
+</section>

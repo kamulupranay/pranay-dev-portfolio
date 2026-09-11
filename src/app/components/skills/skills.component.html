@@ -1,0 +1,19 @@
+<section id="skills" class="section alt">
+    <div class="section-head">
+        <p class="eyebrow">02 · TECH STACK</p>
+        <h2>Tools I use to <span>build well.</span></h2>
+        <p>Experience-led technology choices, with a focus on maintainability, accessibility and performance.</p>
+    </div>
+    <div class="skill-grid">
+        @for(group of groups; track $index) {
+        <article class="skill-card">
+            <div class="card-index">{{group.title}}</div>
+            <div class="badges">
+                @for(item of group.items; track $index) {
+                <span>{{item}}</span>
+                }
+            </div>
+        </article>
+        }
+    </div>
+</section>
