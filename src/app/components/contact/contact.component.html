@@ -9,8 +9,9 @@
                     [href]="'tel:'+config.phone"><span>Phone</span>+91 97009 81212</a>
                 <div><span>Location</span>Pan India | Open to Relocate</div>
             </div>
-            <div class="contact-actions"><a class="btn primary" [href]="'mailto:'+config.email">Send Email ↗</a><a
-                    class="btn secondary" [href]="'tel:'+config.phone">Call Me ☎</a></div>
+            <div class="contact-actions">
+                <a class="btn primary" [href]="'mailto:'+config.email">Send Email ↗</a>
+                <a class="btn secondary" [href]="'tel:'+config.phone">Call Me <i class="fa-solid fa-phone"></i></a></div>
         </div>
         <form [formGroup]="form" (ngSubmit)="submit()">
             <label>Name<input type="text" formControlName="name" autocomplete="name">

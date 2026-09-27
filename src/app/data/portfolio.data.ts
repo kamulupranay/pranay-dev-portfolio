@@ -6,7 +6,7 @@ export const portfolioConfig = {
   name: "KAMULU PRANAY",
   title: "Senior Frontend Developer",
   subtitle: "Angular | TypeScript | JavaScript | RxJS | NgRx",
-  experience: "5.3+ Years",
+  experience: "5.0 Years",
   location: "Pan India | Open to Relocate",
   availability: "Immediate Joiner",
   email: "kamulupranay@gmail.com",
@@ -14,11 +14,12 @@ export const portfolioConfig = {
   social: {
     github: "https://github.com/kamulupranay",
     linkedin: "https://www.linkedin.com/in/pranay-kamulu-8176b2240",
+    personalWebsite: "https://daily-grocery-mart.netlify.app/login",
   },
-  resumePath: "assets/resume/Kamulu-Pranay-Resume.pdf",
+  resumePath: "assets/resume/Kamulu-Pranay-Resume.docx",
 };
 export const stats = [
-  ["5.3+", "Years Experience"],
+  ["5.0", "Years Experience"],
   ["3", "Production Angular SPAs"],
   ["10+", "Reusable UI Components"],
   ["100+", "UI Defects Resolved"],
@@ -81,6 +82,19 @@ export const skillGroups: SkillGroup[] = [
   },
 ];
 export const experiences: Experience[] = [
+  {
+    role: "Senior Frontend Developer – Frontend",
+    company: "Techroid Solutions Pvt. Ltd.",
+    period: "Apr 2026 – Present",
+    project: "TOOTRiS – Child Care Management & Enrollment Platform",
+    highlights: [
+      "Developed and maintained responsive Angular applications for a child-care marketplace supporting Family and Provider workflows including provider search, profiles, enrollment, scheduling, communication and payment-related features.",
+      "Built reusable Angular components and reactive forms for provider registration, child management, enrollment, profile management and scheduling workflows with custom validations.",
+      "Implemented REST API integration using Angular HttpClient, RxJS and NgRx Effects for asynchronous data retrieval, caching and centralized application state management.",
+      "Integrated authentication and role-based authorization using HTTP interceptors, route guards and permission-based UI controls for Family, Provider and administrative workflows.",
+      "Adopted modern Angular patterns including standalone components, Signals for local reactive state, lazy-loaded feature routes and OnPush change detection to improve maintainability and application performance.",
+    ],
+  },
   {
     role: "Senior Software Developer – Frontend",
     company: "Experis IT Pvt. Ltd.",
@@ -146,6 +160,22 @@ export const achievements = [
   ["3 Premium Admin Templates", "Built templates used by global clients."],
 ];
 export const projects: Project[] = [
+  {
+    name: "TOOTRiS – Child Care Management & Enrollment Platform",
+    category: "Child Care services",
+    description:
+      "I worked on TOOTRiS, which is a child-care management and marketplace platform connecting families with child-care providers.",
+    technologies: [
+      "Angular 18",
+      "TypeScript",
+      "RxJS",
+      "NgRx",
+      "Signals",
+      "Angular Material",
+      "Bootstrap",
+      "REST APIs",
+    ]
+  },
   {
     name: "e-Filing Portal (IEC 2.0)",
     category: "Enterprise / Government / Tax",
